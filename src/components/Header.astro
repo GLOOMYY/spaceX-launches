@@ -1,5 +1,6 @@
 ---
 import HeaderButton from "./HeaderButton.astro";
+import { Counter } from "./Counter";
 ---
 
 <header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
@@ -10,6 +11,7 @@ import HeaderButton from "./HeaderButton.astro";
     <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
       All the information about SpaceX
     </p>
+    <Counter client:visible transition:persist />
   </div>
 
   <nav
